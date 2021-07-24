@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RestAPIExample.MainPage">
+
+    <StackLayout>
+        <CollectionView x:Name="lstPost">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BackgroundColor="Pink">
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding title}" TextColor="Red" Margin="10"/>
+                            <Label Text="{Binding body}" TextColor="Green"/>
+                        </StackLayout>
+                    </Frame>
+             
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+</ContentPage>
